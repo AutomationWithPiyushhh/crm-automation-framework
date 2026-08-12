@@ -19,7 +19,7 @@ public class FileUtility {
 		return value;
 	}
 	
-	public String getDataFromExcelFile(String sheetName, int rowNum, int cellNum)					 throws EncryptedDocumentException, IOException {
+	public String getDataFromExcelWorkbook(String sheetName, int rowNum, int cellNum)					 throws EncryptedDocumentException, IOException {
 
 		FileInputStream fis2 = new FileInputStream("./src/test/resources/testScriptData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis2);
