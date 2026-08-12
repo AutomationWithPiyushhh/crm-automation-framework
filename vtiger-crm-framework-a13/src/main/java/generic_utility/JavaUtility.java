@@ -2,11 +2,20 @@ package generic_utility;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 public class JavaUtility {
 	public static int generateRandomNumber() {
 		return (int)(Math.random()*9999);
 	}
+	
+	public static long generateCurrentTimeInMillis() {
+		return System.currentTimeMillis();
+	}
+	
+	 public static int generateRandomNumber(int max) {
+	        return new Random().nextInt(max);
+	    }
 	
 	public static String genCurrentTime() {
 		LocalDateTime now = LocalDateTime.now();
