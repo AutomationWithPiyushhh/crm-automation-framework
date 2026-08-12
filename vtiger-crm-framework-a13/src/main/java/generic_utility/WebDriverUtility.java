@@ -58,6 +58,10 @@ public class WebDriverUtility {
 	public void maximizeWindow() {
 		driver.manage().window().maximize();
 	}
+	
+	public void minimizeWindow() {
+		driver.manage().window().minimize();
+	}
 
 	
 	/* to handle frames */
