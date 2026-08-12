@@ -8,6 +8,10 @@ public class JavaUtility {
 		return (int)(Math.random()*9999);
 	}
 	
+	public static void create() {
+		System.out.println("Java utility is completed ");
+	}
+	
 	public static String genCurrentTime() {
 		LocalDateTime now = LocalDateTime.now();
 //		System.out.println(now); // 2025-12-18T16:40:38.866980600
