@@ -6,7 +6,9 @@ import java.time.format.DateTimeFormatter;
 public class JavaUtility {
 	public static int generateRandomNumber() {
 		return (int)(Math.random()*9999);
+		
 	}
+	
 	
 	public static String genCurrentTime() {
 		LocalDateTime now = LocalDateTime.now();
@@ -15,5 +17,10 @@ public class JavaUtility {
 		String currentTime = DateTimeFormatter.ofPattern("ddMMyyyy_HHmmss").format(now);
 		
 		return currentTime;
+	}
+	
+	public static void message()
+	{
+		System.out.println("i did changes");
 	}
 }
