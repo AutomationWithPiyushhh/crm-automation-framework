@@ -16,4 +16,7 @@ public class JavaUtility {
 		
 		return currentTime;
 	}
+	public static long getCurrentTimeMillis() {
+		return System.currentTimeMillis();
+	}
 }
